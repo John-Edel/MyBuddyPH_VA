@@ -6,12 +6,23 @@ import DisputeFormEmail from "../../emails/dispute-form-email"
 import SupportFormEmail from "../../emails/support-form-email"
 import FeedbackFormEmail from "../../emails/feedback-form-email"
 
+if (!process.env.RESEND_API_KEY) {
+  throw new Error("Missing RESEND_API_KEY environment variable")
+}
+
 const resend = new Resend(process.env.RESEND_API_KEY)
 
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
     const { type, data } = body
+
+    if (!type || !data) {
+      return NextResponse.json(
+        { error: "Missing required fields" },
+        { status: 400 }
+      )
+    }
 
     let emailComponent
     let subject = ""
@@ -38,7 +49,10 @@ export async function POST(request: NextRequest) {
         subject = `New Feedback - ${data.category}`
         break
       default:
-        return NextResponse.json({ error: "Invalid form type" }, { status: 400 })
+        return NextResponse.json(
+          { error: "Invalid form type" },
+          { status: 400 }
+        )
     }
 
     const { data: emailData, error } = await resend.emails.send({
@@ -49,13 +63,22 @@ export async function POST(request: NextRequest) {
     })
 
     if (error) {
-      console.error("Email error:", error)
-      return NextResponse.json({ error: "Failed to send email" }, { status: 500 })
+      console.error("Resend API error:", error)
+      return NextResponse.json(
+        { error: "Failed to send email" },
+        { status: 500 }
+      )
     }
 
-    return NextResponse.json({ success: true, data: emailData })
+    return NextResponse.json(
+      { success: true, data: emailData },
+      { status: 200 }
+    )
   } catch (error) {
     console.error("API error:", error)
-    return NextResponse.json({ error: "Internal server error" }, { status: 500 })
+    return NextResponse.json(
+      { error: "Internal server error" },
+      { status: 500 }
+    )
   }
 }
