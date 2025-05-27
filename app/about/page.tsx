@@ -1,6 +1,6 @@
-import Image from "next/image"
-import { Target, Eye, Heart } from "lucide-react"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import Image from "next/image";
+import { Target, Eye, Heart } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function AboutPage() {
   return (
@@ -8,23 +8,31 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="bg-gray-50 py-16 lg:py-24">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl lg:text-6xl font-bold mb-6">Get to know us!</h1>
+          <h1 className="text-4xl lg:text-6xl font-bold mb-6">
+            Get to know us!
+          </h1>
           <div className="max-w-4xl mx-auto space-y-6 text-lg lg:text-xl text-gray-700 leading-relaxed">
             <p>
-              Our journey began with a simple yet powerful idea: to create a platform that opens doors of opportunity
-              for Filipinos.
+              Our journey began with a simple yet powerful idea: to open doors
+              of opportunity for Filipinos by connecting them with meaningful,
+              sustainable work.
             </p>
             <p>
-              We saw the challenges—limited job opportunities, barriers to earning, and the struggle to find reliable
-              help—and we knew that by building the right platform, we could bridge these gaps.
+              We saw the challenges — limited job options, income instability,
+              and barriers to remote employment — and we knew that with the
+              right platform, we could bridge these gaps.
             </p>
             <p>
-              MyBuddyPH is more than just a marketplace; it's a movement. A space where talent meets opportunity, where
-              time is reclaimed, and where every task completed brings someone closer to success.
+              MyBuddyPH isn't just an outsourcing platform — it's a mission. A
+              mission to empower Filipino talent, help businesses scale smarter,
+              and build lasting partnerships rooted in trust, skill, and
+              reliability. Every client we support, every Buddy we place, every
+              task completed — it's all part of a bigger story: a story of
+              upward mobility, global opportunity, and Filipino excellence.
             </p>
             <p className="font-semibold">
-              Our legacy lives on in every connection made, every success story shared, and every door of opportunity
-              opened.
+              The future is flexible. The talent is here. MyBuddyPH is where
+              they meet.
             </p>
           </div>
 
@@ -38,7 +46,6 @@ export default function AboutPage() {
                 className="w-full h-full object-contain"
               />
             </div>
-            <h2 className="text-2xl font-bold">MyBuddyPH - Logo</h2>
           </div>
         </div>
       </section>
@@ -47,23 +54,29 @@ export default function AboutPage() {
       <section className="py-16 lg:py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-center">Overview</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-center">
+              Overview
+            </h2>
             <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
               <p>
-                MyBuddyPH is an Online Task Marketplace that connects people who need to outsource tasks with skilled
-                individuals ready to work and earn.
+                MyBuddyPH is an online outsourcing platform that connects
+                businesses and entrepreneurs with skilled Filipino professionals
+                ready to work and earn — remotely.
               </p>
               <p>
-                From simple household chores to specialized services, clients can find trusted professionals for home
-                cleaning, handyman jobs, admin work, photography, graphic design, website development, and more.
+                Whether you need a virtual assistant, lead generation expert,
+                customer support agent, or someone to handle admin tasks and
+                creative work, we make it easy to find the right talent for your
+                needs — full-time, part-time, or project-based.
               </p>
               <p>
-                If there's a task on your to-do list that you can't handle, post it on MyBuddyPH and let a skilled Buddy
-                take care of it!
+                If there's a task or role you're ready to delegate, MyBuddyPH
+                helps you hire smart and work smarter.
               </p>
               <p className="font-semibold">
-                It's a game-changing opportunity for Filipinos looking for work, for those in need of extra hands, and
-                for anyone struggling to find time to get things done.
+                t's a game-changing opportunity for Filipinos seeking stable
+                online jobs — and for clients worldwide looking to scale with
+                reliable remote support.
               </p>
             </div>
           </div>
@@ -84,16 +97,25 @@ export default function AboutPage() {
               </CardHeader>
               <CardContent className="space-y-4 text-gray-700">
                 <p>
-                  Our goal is to make your life easier and more convenient. Instead of spending hours searching online
-                  or struggling to find the right person for the job, MyBuddyPH connects you with skilled and
-                  trustworthy individuals who are eager to help.
+                  Our goal is simple: to make outsourcing easy, reliable, and
+                  efficient — whether you're a startup, entrepreneur, or growing
+                  business.
                 </p>
                 <p>
-                  Whether you need a seasoned professional, a part-timer, a freelancer, or even a licensed expert—we've
-                  got you covered!
+                  Instead of spending hours searching online or vetting
+                  freelancers, MyBuddyPH connects you with skilled and
+                  trustworthy Filipino professionals who are ready to work
+                  remotely — full-time, part-time, or project-based.
                 </p>
-                <p>Simply post your task on our platform, and let our Buddies take care of the rest.</p>
-                <p className="font-semibold text-center">One mission, one phrase: "Connectivity, Made Easy."</p>
+                <p>
+                  Whether you need a virtual assistant, lead generation
+                  specialist, customer support agent, or an admin pro — we've
+                  got a Buddy for that. Just tell us what you need, and we'll
+                  match you with the right talent — fast
+                </p>
+                <p className="font-semibold text-center">
+                  One mission. One phrase: “Connectivity, Made Easy.”
+                </p>
               </CardContent>
             </Card>
 
@@ -107,15 +129,25 @@ export default function AboutPage() {
               </CardHeader>
               <CardContent className="space-y-4 text-gray-700">
                 <p>
-                  To build a marketplace where any task is possible, whether remotely or in-person, providing equal job
-                  opportunities for Filipinos without permanent work or academic backgrounds.
+                  Our mission is to create a platform where every Filipino can
+                  thrive, whether online or on the ground.
                 </p>
                 <p>
-                  Many are overlooked by larger companies, but this platform will empower them to showcase their
-                  talents, deliver outstanding service, and regain control of their time.
+                  We aim to open doors for those who are often overlooked —
+                  Filipinos without permanent jobs, degrees, or connections — by
+                  connecting them with real work opportunities based on skills,
+                  not resumes.
                 </p>
-                <p>It will be a fresh avenue for Filipinos to utilize their skills and put them to good use.</p>
-                <p className="font-semibold text-center">Join us—let's build a place where Filipinos reign!</p>
+                <p>
+                  Whether it's remote outsourcing today or in-person tasks
+                  tomorrow, MyBuddyPH exists to empower the everyday Filipino —
+                  giving them a space to showcase their talents, deliver great
+                  service, and take control of their time and income. This is
+                  more than a platform. It's a movement. A new future.
+                </p>
+                <p className="font-semibold text-center">
+                  A place where Filipinos reign.
+                </p>
               </CardContent>
             </Card>
 
@@ -129,24 +161,29 @@ export default function AboutPage() {
               </CardHeader>
               <CardContent className="space-y-4 text-gray-700">
                 <p>
-                  Imagine having access to a platform that feels like having an army of helpers at your fingertips. Our
-                  vision is to build a seamless, efficient, and effortless way to get things done.
+                  Imagine having a trusted team of skilled helpers right at your
+                  fingertips. Our vision is to build a seamless, efficient, and
+                  effortless way to get things done — and help people buy back
+                  their time.
                 </p>
                 <ul className="space-y-2">
-                  <li>• To help people buy back their time.</li>
-                  <li>• To empower individuals to utilize their talents and skills, even without a regular job.</li>
+                  <li>• We believe in empowering Filipinos to turn their talents into income</li>
+                  <li>
+                    • whether or not they have a regular job, a diploma, or corporate experience
+                  </li>
                 </ul>
                 <p>
-                  With MyBuddyPH, you'll have access to a network of talented individuals ready to lend a hand. Whether
-                  it's a quick task or a major project, simply post your request, and Buddies will be there to assist
-                  you.
+                   With MyBuddyPH, individuals can access real work opportunities, while clients get the support they need — from simple tasks to complex projects.
+This isn't just about outsourcing. It's about building a community of support, where anyone can lend a hand — and pay it forward using their own skills and expertise.
                 </p>
-                <p className="font-semibold text-center">One mission, one phrase: "Connectivity, Made Easy."</p>
+                <p className="font-semibold text-center">
+                  One mission. One phrase: “Connectivity, Made Easy.”
+                </p>
               </CardContent>
             </Card>
           </div>
         </div>
       </section>
     </div>
-  )
+  );
 }

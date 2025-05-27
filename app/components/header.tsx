@@ -27,9 +27,9 @@ export default function Header() {
             <Link href="/about" className="text-gray-700 hover:text-black transition-colors">
               About
             </Link>
-            <Link href="/help-center" className="text-gray-700 hover:text-black transition-colors">
+            {/* <Link href="/help-center" className="text-gray-700 hover:text-black transition-colors">
               Help Center
-            </Link>
+            </Link> */}
           </nav>
 
           {/* Mobile Menu Button */}
@@ -56,13 +56,13 @@ export default function Header() {
               >
                 About
               </Link>
-              <Link
+              {/* <Link
                 href="/help-center"
                 className="text-gray-700 hover:text-black transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Help Center
-              </Link>
+              </Link> */}
             </nav>
           </div>
         )}

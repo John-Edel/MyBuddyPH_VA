@@ -25,7 +25,7 @@ export default function Footer() {
           </div>
 
           {/* Policies and Guidelines */}
-          <div className="space-y-4">
+          {/* <div className="space-y-4">
             <h3 className="text-lg font-semibold text-gray-800">Policies and Guidelines</h3>
             <div className="space-y-2">
               <Link href="/legal-policies" className="block text-gray-600 hover:text-black transition-colors">
@@ -38,16 +38,16 @@ export default function Footer() {
                 FAQs
               </Link>
             </div>
-          </div>
+          </div> */}
 
           {/* Need Help */}
-          <div className="space-y-4">
+          {/* <div className="space-y-4">
             <h3 className="text-lg font-semibold text-gray-800">Need Help?</h3>
             <Link href="/help-center" className="block text-gray-600 hover:text-black transition-colors">
               Visit our Help Center
             </Link>
             <p className="text-sm text-gray-500">© 2025 mybuddyph.com</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
