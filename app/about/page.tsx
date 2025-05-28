@@ -87,91 +87,97 @@ export default function AboutPage() {
       <section className="bg-gray-50 py-16 lg:py-24">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl lg:text-4xl font-bold mb-12 text-center">MyBuddyPH Core Values</h2>
-          <div className="grid lg:grid-cols-3 gap-8">
-            {/* Integrity */}
-            <Card className="border-0 shadow-lg">
-              <CardHeader className="text-center">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Shield className="w-8 h-8 text-blue-600" />
-                </div>
-                <CardTitle className="text-2xl">Integrity</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4 text-gray-700">
-                <p className="font-semibold">We do what is right—even when no one is watching.</p>
-                <p>
-                  Every VA in our network is expected to deliver honest, reliable, and trustworthy service. 
-                  We value transparency and uphold high ethical standards in all interactions.
-                </p>
-              </CardContent>
-            </Card>
+          <div className="grid gap-8 max-w-7xl mx-auto">
+            {/* First Row - 3 cards */}
+            <div className="grid lg:grid-cols-3 gap-8">
+              {/* Integrity */}
+              <Card className="border-0 shadow-lg">
+                <CardHeader className="text-center">
+                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Shield className="w-8 h-8 text-blue-600" />
+                  </div>
+                  <CardTitle className="text-2xl">Integrity</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4 text-gray-700">
+                  <p className="font-semibold">We do what is right—even when no one is watching.</p>
+                  <p>
+                    Every VA in our network is expected to deliver honest, reliable, and trustworthy service. 
+                    We value transparency and uphold high ethical standards in all interactions.
+                  </p>
+                </CardContent>
+              </Card>
 
-            {/* Excellence */}
-            <Card className="border-0 shadow-lg">
-              <CardHeader className="text-center">
-                <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Star className="w-8 h-8 text-yellow-600" />
-                </div>
-                <CardTitle className="text-2xl">Excellence</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4 text-gray-700">
-                <p className="font-semibold">We don't settle for "just okay."</p>
-                <p>
-                  Our team of virtual professionals is committed to consistently delivering high-quality work 
-                  and exceeding client expectations with professionalism and skill.
-                </p>
-              </CardContent>
-            </Card>
+              {/* Excellence */}
+              <Card className="border-0 shadow-lg">
+                <CardHeader className="text-center">
+                  <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Star className="w-8 h-8 text-yellow-600" />
+                  </div>
+                  <CardTitle className="text-2xl">Excellence</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4 text-gray-700">
+                  <p className="font-semibold">We don't settle for "just okay."</p>
+                  <p>
+                    Our team of virtual professionals is committed to consistently delivering high-quality work 
+                    and exceeding client expectations with professionalism and skill.
+                  </p>
+                </CardContent>
+              </Card>
 
-            {/* Accountability */}
-            <Card className="border-0 shadow-lg">
-              <CardHeader className="text-center">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Target className="w-8 h-8 text-green-600" />
-                </div>
-                <CardTitle className="text-2xl">Accountability</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4 text-gray-700">
-                <p className="font-semibold">We take ownership—of tasks, outcomes, and growth.</p>
-                <p>
-                  Our VAs are responsible, proactive, and dependable. They own their work and results, 
-                  building trust with clients through consistency and communication.
-                </p>
-              </CardContent>
-            </Card>
+              {/* Accountability */}
+              <Card className="border-0 shadow-lg">
+                <CardHeader className="text-center">
+                  <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Target className="w-8 h-8 text-green-600" />
+                  </div>
+                  <CardTitle className="text-2xl">Accountability</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4 text-gray-700">
+                  <p className="font-semibold">We take ownership—of tasks, outcomes, and growth.</p>
+                  <p>
+                    Our VAs are responsible, proactive, and dependable. They own their work and results, 
+                    building trust with clients through consistency and communication.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
 
-            {/* Respect and Empathy */}
-            <Card className="border-0 shadow-lg lg:col-start-2">
-              <CardHeader className="text-center">
-                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Users className="w-8 h-8 text-purple-600" />
-                </div>
-                <CardTitle className="text-2xl">Respect and Empathy</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4 text-gray-700">
-                <p className="font-semibold">We treat everyone with dignity and compassion.</p>
-                <p>
-                  Our community thrives on mutual respect—whether between clients, VAs, or support teams. 
-                  We listen, we care, and we support each other like a true buddy should.
-                </p>
-              </CardContent>
-            </Card>
+            {/* Second Row - 2 cards centered */}
+            <div className="grid lg:grid-cols-2 gap-8 lg:w-2/3 mx-auto">
+              {/* Respect and Empathy */}
+              <Card className="border-0 shadow-lg">
+                <CardHeader className="text-center">
+                  <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Users className="w-8 h-8 text-purple-600" />
+                  </div>
+                  <CardTitle className="text-2xl">Respect and Empathy</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4 text-gray-700">
+                  <p className="font-semibold">We treat everyone with dignity and compassion.</p>
+                  <p>
+                    Our community thrives on mutual respect—whether between clients, VAs, or support teams. 
+                    We listen, we care, and we support each other like a true buddy should.
+                  </p>
+                </CardContent>
+              </Card>
 
-            {/* Growth Mindset */}
-            <Card className="border-0 shadow-lg lg:col-start-3">
-              <CardHeader className="text-center">
-                <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Brain className="w-8 h-8 text-red-600" />
-                </div>
-                <CardTitle className="text-2xl">Growth Mindset</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4 text-gray-700">
-                <p className="font-semibold">We never stop learning.</p>
-                <p>
-                  We encourage continuous learning, upskilling, and personal development. VAs on our platform 
-                  are not just workers—they're future leaders and entrepreneurs.
-                </p>
-              </CardContent>
-            </Card>
+              {/* Growth Mindset */}
+              <Card className="border-0 shadow-lg">
+                <CardHeader className="text-center">
+                  <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Brain className="w-8 h-8 text-red-600" />
+                  </div>
+                  <CardTitle className="text-2xl">Growth Mindset</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4 text-gray-700">
+                  <p className="font-semibold">We never stop learning.</p>
+                  <p>
+                    We encourage continuous learning, upskilling, and personal development. VAs on our platform 
+                    are not just workers—they're future leaders and entrepreneurs.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
