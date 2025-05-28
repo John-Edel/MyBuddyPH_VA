@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Target, Eye, Heart } from "lucide-react";
+import { Target, Eye, Heart, Shield, Star, Zap, Brain, Users } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function AboutPage() {
@@ -83,104 +83,101 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Goals, Mission, Vision */}
+      {/* Core Values Section */}
       <section className="bg-gray-50 py-16 lg:py-24">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-3 gap-8">
-            {/* Goals */}
-            <Card className="border-0 shadow-lg">
-              <CardHeader className="text-center">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Target className="w-8 h-8 text-blue-600" />
-                </div>
-                <CardTitle className="text-2xl">Goals</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4 text-gray-700">
-                <p>
-                  Our goal is simple: to make outsourcing easy, reliable, and
-                  efficient — whether you're a startup, entrepreneur, or growing
-                  business.
-                </p>
-                <p>
-                  Instead of spending hours searching online or vetting
-                  freelancers, MyBuddyPH connects you with skilled and
-                  trustworthy Filipino professionals who are ready to work
-                  remotely — full-time, part-time, or project-based.
-                </p>
-                <p>
-                  Whether you need a virtual assistant, lead generation
-                  specialist, customer support agent, or an admin pro — we've
-                  got a Buddy for that. Just tell us what you need, and we'll
-                  match you with the right talent — fast
-                </p>
-                <p className="font-semibold text-center">
-                  One mission. One phrase: “Connectivity, Made Easy.”
-                </p>
-              </CardContent>
-            </Card>
+          <h2 className="text-3xl lg:text-4xl font-bold mb-12 text-center">MyBuddyPH Core Values</h2>
+          <div className="grid gap-8 max-w-7xl mx-auto">
+            {/* First Row - 3 cards */}
+            <div className="grid lg:grid-cols-3 gap-8">
+              {/* Integrity */}
+              <Card className="border-0 shadow-lg">
+                <CardHeader className="text-center">
+                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Shield className="w-8 h-8 text-blue-600" />
+                  </div>
+                  <CardTitle className="text-2xl">Integrity</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4 text-gray-700">
+                  <p className="font-semibold">We do what is right—even when no one is watching.</p>
+                  <p>
+                    Every VA in our network is expected to deliver honest, reliable, and trustworthy service. 
+                    We value transparency and uphold high ethical standards in all interactions.
+                  </p>
+                </CardContent>
+              </Card>
 
-            {/* Mission */}
-            <Card className="border-0 shadow-lg">
-              <CardHeader className="text-center">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Heart className="w-8 h-8 text-green-600" />
-                </div>
-                <CardTitle className="text-2xl">Mission</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4 text-gray-700">
-                <p>
-                  Our mission is to create a platform where every Filipino can
-                  thrive, whether online or on the ground.
-                </p>
-                <p>
-                  We aim to open doors for those who are often overlooked —
-                  Filipinos without permanent jobs, degrees, or connections — by
-                  connecting them with real work opportunities based on skills,
-                  not resumes.
-                </p>
-                <p>
-                  Whether it's remote outsourcing today or in-person tasks
-                  tomorrow, MyBuddyPH exists to empower the everyday Filipino —
-                  giving them a space to showcase their talents, deliver great
-                  service, and take control of their time and income. This is
-                  more than a platform. It's a movement. A new future.
-                </p>
-                <p className="font-semibold text-center">
-                  A place where Filipinos reign.
-                </p>
-              </CardContent>
-            </Card>
+              {/* Excellence */}
+              <Card className="border-0 shadow-lg">
+                <CardHeader className="text-center">
+                  <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Star className="w-8 h-8 text-yellow-600" />
+                  </div>
+                  <CardTitle className="text-2xl">Excellence</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4 text-gray-700">
+                  <p className="font-semibold">We don't settle for "just okay."</p>
+                  <p>
+                    Our team of virtual professionals is committed to consistently delivering high-quality work 
+                    and exceeding client expectations with professionalism and skill.
+                  </p>
+                </CardContent>
+              </Card>
 
-            {/* Vision */}
-            <Card className="border-0 shadow-lg">
-              <CardHeader className="text-center">
-                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Eye className="w-8 h-8 text-purple-600" />
-                </div>
-                <CardTitle className="text-2xl">Vision</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4 text-gray-700">
-                <p>
-                  Imagine having a trusted team of skilled helpers right at your
-                  fingertips. Our vision is to build a seamless, efficient, and
-                  effortless way to get things done — and help people buy back
-                  their time.
-                </p>
-                <ul className="space-y-2">
-                  <li>• We believe in empowering Filipinos to turn their talents into income</li>
-                  <li>
-                    • whether or not they have a regular job, a diploma, or corporate experience
-                  </li>
-                </ul>
-                <p>
-                   With MyBuddyPH, individuals can access real work opportunities, while clients get the support they need — from simple tasks to complex projects.
-This isn't just about outsourcing. It's about building a community of support, where anyone can lend a hand — and pay it forward using their own skills and expertise.
-                </p>
-                <p className="font-semibold text-center">
-                  One mission. One phrase: “Connectivity, Made Easy.”
-                </p>
-              </CardContent>
-            </Card>
+              {/* Accountability */}
+              <Card className="border-0 shadow-lg">
+                <CardHeader className="text-center">
+                  <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Target className="w-8 h-8 text-green-600" />
+                  </div>
+                  <CardTitle className="text-2xl">Accountability</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4 text-gray-700">
+                  <p className="font-semibold">We take ownership—of tasks, outcomes, and growth.</p>
+                  <p>
+                    Our VAs are responsible, proactive, and dependable. They own their work and results, 
+                    building trust with clients through consistency and communication.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Second Row - 2 cards centered */}
+            <div className="grid lg:grid-cols-2 gap-8 lg:w-2/3 mx-auto">
+              {/* Respect and Empathy */}
+              <Card className="border-0 shadow-lg">
+                <CardHeader className="text-center">
+                  <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Users className="w-8 h-8 text-purple-600" />
+                  </div>
+                  <CardTitle className="text-2xl">Respect and Empathy</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4 text-gray-700">
+                  <p className="font-semibold">We treat everyone with dignity and compassion.</p>
+                  <p>
+                    Our community thrives on mutual respect—whether between clients, VAs, or support teams. 
+                    We listen, we care, and we support each other like a true buddy should.
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Growth Mindset */}
+              <Card className="border-0 shadow-lg">
+                <CardHeader className="text-center">
+                  <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Brain className="w-8 h-8 text-red-600" />
+                  </div>
+                  <CardTitle className="text-2xl">Growth Mindset</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4 text-gray-700">
+                  <p className="font-semibold">We never stop learning.</p>
+                  <p>
+                    We encourage continuous learning, upskilling, and personal development. VAs on our platform 
+                    are not just workers—they're future leaders and entrepreneurs.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
