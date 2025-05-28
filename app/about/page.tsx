@@ -27,17 +27,17 @@ export default function AboutPage() {
               sustainable work.
             </p>
             <p>
-              We saw the challenges — limited job options, income instability,
-              and barriers to remote employment — and we knew that with the
-              right platform, we could bridge these gaps.
+              We saw the challenges: limited job options, unstable income, and
+              barriers to opportunity. So, we built a people-first platform
+              where Filipino talent meets global business needs. From every task
+              completed to every client matched, we're building something
+              bigger:To create a movement. A new future. A place where Filipinos
+              reign.
             </p>
             <p>
-              MyBuddyPH isn't just an outsourcing platform — it's a mission. A
-              mission to empower Filipino talent, help businesses scale smarter,
-              and build lasting partnerships rooted in trust, skill, and
-              reliability. Every client we support, every Buddy we place, every
-              task completed — it's all part of a bigger story: a story of
-              upward mobility, global opportunity, and Filipino excellence.
+              MyBuddyPH is more than a platform — it's a movement. We exist to
+              open doors for Filipino professionals by connecting them with
+              meaningful, sustainable remote work.
             </p>
             <p className="font-semibold">
               The future is flexible. The talent is here. MyBuddyPH is where
@@ -241,17 +241,20 @@ export default function AboutPage() {
               </CardHeader>
               <CardContent className="space-y-4 text-gray-700">
                 <p>
-                 To build a world where getting help is effortless, and giving help creates opportunity.
-
+                  To build a world where getting help is effortless, and giving
+                  help creates opportunity.
                 </p>
                 <p>
-                 Through technology, trust, and talent, MyBuddyPH empowers clients to reclaim their time — while enabling everyday Filipinos to turn their skills into real, meaningful income.
+                  Through technology, trust, and talent, MyBuddyPH empowers
+                  clients to reclaim their time — while enabling everyday
+                  Filipinos to turn their skills into real, meaningful income.
                 </p>
                 <p>
-                  This isn't just outsourcing. It's a new way of working, living, and lifting each other up.
+                  This isn't just outsourcing. It's a new way of working,
+                  living, and lifting each other up.
                 </p>
                 <p className="font-semibold text-center">
-                 Connectivity, made easy.
+                  Connectivity, made easy.
                 </p>
               </CardContent>
             </Card>
