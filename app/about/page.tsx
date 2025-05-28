@@ -228,7 +228,6 @@ export default function AboutPage() {
                   To create a movement. A new future. A place where Filipinos
                   reign.
                 </p>
-                <p>you can think of how you style it</p>
               </CardContent>
             </Card>
 
@@ -249,7 +248,7 @@ export default function AboutPage() {
                  Through technology, trust, and talent, MyBuddyPH empowers clients to reclaim their time — while enabling everyday Filipinos to turn their skills into real, meaningful income.
                 </p>
                 <p>
-                  This isn’t just outsourcing. It’s a new way of working, living, and lifting each other up.
+                  This isn't just outsourcing. It's a new way of working, living, and lifting each other up.
                 </p>
                 <p className="font-semibold text-center">
                  Connectivity, made easy.
