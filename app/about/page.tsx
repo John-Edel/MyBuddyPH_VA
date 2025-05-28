@@ -27,21 +27,17 @@ export default function AboutPage() {
               sustainable work.
             </p>
             <p>
-              We saw the challenges: limited job options, unstable income, and
-              barriers to opportunity. So, we built a people-first platform
-              where Filipino talent meets global business needs. From every task
-              completed to every client matched, we're building something
-              bigger:To create a movement. A new future. A place where Filipinos
-              reign.
+              MyBuddyPH is more than a platform — it's a movement.
+We exist to open doors for Filipino professionals by connecting them with meaningful, sustainable remote work.
             </p>
             <p>
-              MyBuddyPH is more than a platform — it's a movement. We exist to
-              open doors for Filipino professionals by connecting them with
-              meaningful, sustainable remote work.
+              We saw the challenges: limited job options, unstable income, and barriers to opportunity.
+So, we built a people-first platform where Filipino talent meets global business needs.
+From every task completed to every client matched, we're building something bigger:
+
             </p>
             <p className="font-semibold">
-              The future is flexible. The talent is here. MyBuddyPH is where
-              they meet.
+             To create a movement. A new future. A place where Filipinos reign.
             </p>
           </div>
 
