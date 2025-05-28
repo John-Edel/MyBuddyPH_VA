@@ -1,5 +1,14 @@
 import Image from "next/image";
-import { Target, Eye, Heart, Shield, Star, Zap, Brain, Users } from "lucide-react";
+import {
+  Target,
+  Eye,
+  Heart,
+  Shield,
+  Star,
+  Zap,
+  Brain,
+  Users,
+} from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function AboutPage() {
@@ -18,21 +27,19 @@ export default function AboutPage() {
               sustainable work.
             </p>
             <p>
-              We saw the challenges — limited job options, income instability,
-              and barriers to remote employment — and we knew that with the
-              right platform, we could bridge these gaps.
+              We saw the challenges: limited job options, unstable income, and
+              barriers to opportunity. So, we built a people-first platform
+              where Filipino talent meets global business needs. From every task
+              completed to every client matched, we're building something
+              bigger:
             </p>
             <p>
-              MyBuddyPH isn't just an outsourcing platform — it's a mission. A
-              mission to empower Filipino talent, help businesses scale smarter,
-              and build lasting partnerships rooted in trust, skill, and
-              reliability. Every client we support, every Buddy we place, every
-              task completed — it's all part of a bigger story: a story of
-              upward mobility, global opportunity, and Filipino excellence.
+              MyBuddyPH is more than a platform — it's a movement. We exist to
+              open doors for Filipino professionals by connecting them with
+              meaningful, sustainable remote work.
             </p>
             <p className="font-semibold">
-              The future is flexible. The talent is here. MyBuddyPH is where
-              they meet.
+              To create a movement. A new future. A place where Filipinos reign.
             </p>
           </div>
 
@@ -86,7 +93,9 @@ export default function AboutPage() {
       {/* Core Values Section */}
       <section className="bg-gray-50 py-16 lg:py-24">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-12 text-center">MyBuddyPH Core Values</h2>
+          <h2 className="text-3xl lg:text-4xl font-bold mb-12 text-center">
+            MyBuddyPH Core Values
+          </h2>
           <div className="grid gap-8 max-w-7xl mx-auto">
             {/* First Row - 3 cards */}
             <div className="grid lg:grid-cols-3 gap-8">
@@ -99,10 +108,13 @@ export default function AboutPage() {
                   <CardTitle className="text-2xl">Integrity</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4 text-gray-700">
-                  <p className="font-semibold">We do what is right—even when no one is watching.</p>
+                  <p className="font-semibold">
+                    We do what is right—even when no one is watching.
+                  </p>
                   <p>
-                    Every VA in our network is expected to deliver honest, reliable, and trustworthy service. 
-                    We value transparency and uphold high ethical standards in all interactions.
+                    Every VA in our network is expected to deliver honest,
+                    reliable, and trustworthy service. We value transparency and
+                    uphold high ethical standards in all interactions.
                   </p>
                 </CardContent>
               </Card>
@@ -116,10 +128,13 @@ export default function AboutPage() {
                   <CardTitle className="text-2xl">Excellence</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4 text-gray-700">
-                  <p className="font-semibold">We don't settle for "just okay."</p>
+                  <p className="font-semibold">
+                    We don't settle for "just okay."
+                  </p>
                   <p>
-                    Our team of virtual professionals is committed to consistently delivering high-quality work 
-                    and exceeding client expectations with professionalism and skill.
+                    Our team of virtual professionals is committed to
+                    consistently delivering high-quality work and exceeding
+                    client expectations with professionalism and skill.
                   </p>
                 </CardContent>
               </Card>
@@ -133,10 +148,13 @@ export default function AboutPage() {
                   <CardTitle className="text-2xl">Accountability</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4 text-gray-700">
-                  <p className="font-semibold">We take ownership—of tasks, outcomes, and growth.</p>
+                  <p className="font-semibold">
+                    We take ownership—of tasks, outcomes, and growth.
+                  </p>
                   <p>
-                    Our VAs are responsible, proactive, and dependable. They own their work and results, 
-                    building trust with clients through consistency and communication.
+                    Our VAs are responsible, proactive, and dependable. They own
+                    their work and results, building trust with clients through
+                    consistency and communication.
                   </p>
                 </CardContent>
               </Card>
@@ -150,13 +168,18 @@ export default function AboutPage() {
                   <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Users className="w-8 h-8 text-purple-600" />
                   </div>
-                  <CardTitle className="text-2xl">Respect and Empathy</CardTitle>
+                  <CardTitle className="text-2xl">
+                    Respect and Empathy
+                  </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4 text-gray-700">
-                  <p className="font-semibold">We treat everyone with dignity and compassion.</p>
+                  <p className="font-semibold">
+                    We treat everyone with dignity and compassion.
+                  </p>
                   <p>
-                    Our community thrives on mutual respect—whether between clients, VAs, or support teams. 
-                    We listen, we care, and we support each other like a true buddy should.
+                    Our community thrives on mutual respect—whether between
+                    clients, VAs, or support teams. We listen, we care, and we
+                    support each other like a true buddy should.
                   </p>
                 </CardContent>
               </Card>
@@ -172,8 +195,9 @@ export default function AboutPage() {
                 <CardContent className="space-y-4 text-gray-700">
                   <p className="font-semibold">We never stop learning.</p>
                   <p>
-                    We encourage continuous learning, upskilling, and personal development. VAs on our platform 
-                    are not just workers—they're future leaders and entrepreneurs.
+                    We encourage continuous learning, upskilling, and personal
+                    development. VAs on our platform are not just
+                    workers—they're future leaders and entrepreneurs.
                   </p>
                 </CardContent>
               </Card>
