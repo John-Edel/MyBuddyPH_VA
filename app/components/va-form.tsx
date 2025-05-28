@@ -19,7 +19,7 @@ export default function VAForm() {
     phone: "",
     location: "",
     skills: [] as string[],
-    internetSpeed: "",
+    internetSpeedScreenshot: null as File | null,
     videoIntro: "",
     resume: null as File | null,
     whyHire: "",
@@ -28,13 +28,10 @@ export default function VAForm() {
 
   const skillOptions = [
     "General Virtual Assistant (GVA)",
-    "Customer Service Representative (CSR)",
-    "Social Media Manager (SMM)",
-    "Web Development",
-    "Graphic Design",
-    "Content Writing",
-    "Data Entry",
-    "Administrative Support",
+    "Property Management Virtual Assistant (PMV)",
+    "Customer Service Virtual Assistant (CVA)",
+    "Lead Generation/Appointment Setter (LIC)",
+    
   ]
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -62,7 +59,7 @@ export default function VAForm() {
           phone: "",
           location: "",
           skills: [],
-          internetSpeed: "",
+          internetSpeedScreenshot: null,
           videoIntro: "",
           resume: null,
           whyHire: "",
@@ -88,9 +85,9 @@ export default function VAForm() {
     }))
   }
 
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleFileChange = (field: string) => (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0] || null
-    setFormData((prev) => ({ ...prev, resume: file }))
+    setFormData((prev) => ({ ...prev, [field]: file }))
   }
 
   return (
@@ -104,7 +101,7 @@ export default function VAForm() {
           <CardDescription className="text-lg">Join our pool of talented professionals</CardDescription>
         </CardHeader>
         <CardContent>
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <div className="space-y-6">
             <div className="space-y-2">
               <Label htmlFor="va-name">Full Name *</Label>
               <Input
@@ -166,14 +163,17 @@ export default function VAForm() {
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="internet-speed">Internet Speed (URL or screenshot) *</Label>
+              <Label htmlFor="internet-speed">Internet Speed Screenshot *</Label>
               <Input
                 id="internet-speed"
-                placeholder="Speedtest.net URL or upload screenshot"
-                value={formData.internetSpeed}
-                onChange={(e) => handleChange("internetSpeed", e.target.value)}
+                type="file"
+                accept=".png,.jpg,.jpeg,.gif,.webp"
+                onChange={handleFileChange("internetSpeedScreenshot")}
                 required
               />
+              <p className="text-sm text-gray-600">
+                Please upload a screenshot from speedtest.net or similar service
+              </p>
             </div>
 
             <div className="space-y-2">
@@ -189,7 +189,13 @@ export default function VAForm() {
 
             <div className="space-y-2">
               <Label htmlFor="resume">Resume Upload (PDF/DOC) *</Label>
-              <Input id="resume" type="file" accept=".pdf,.doc,.docx" onChange={handleFileChange} required />
+              <Input 
+                id="resume" 
+                type="file" 
+                accept=".pdf,.doc,.docx" 
+                onChange={handleFileChange("resume")} 
+                required 
+              />
             </div>
 
             <div className="space-y-2">
@@ -204,10 +210,10 @@ export default function VAForm() {
               />
             </div>
 
-            <Button type="submit" className="w-full bg-black text-white hover:bg-gray-800">
+            <Button onClick={handleSubmit} className="w-full bg-black text-white hover:bg-gray-800">
               Submit Application
             </Button>
-          </form>
+          </div>
         </CardContent>
       </Card>
 

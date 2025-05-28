@@ -113,12 +113,10 @@ export default function ClientForm() {
                   <SelectValue placeholder="Select type of help" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="va">Virtual Assistant</SelectItem>
-                  <SelectItem value="csr">Customer Service Representative</SelectItem>
-                  <SelectItem value="smm">Social Media Manager</SelectItem>
+                  <SelectItem value="cva">Customer Service VA</SelectItem>
+                  <SelectItem value="pmv">Property Manager VA</SelectItem>
                   <SelectItem value="gva">General Virtual Assistant</SelectItem>
-                  <SelectItem value="webdev">Web Developer</SelectItem>
-                  <SelectItem value="other">Other</SelectItem>
+                  <SelectItem value="lic">Lead Generation/Appointment Setter</SelectItem>
                 </SelectContent>
               </Select>
             </div>

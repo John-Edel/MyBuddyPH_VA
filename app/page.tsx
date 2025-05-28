@@ -60,14 +60,14 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="flex flex-col items-center justify-center space-y-6">
-            <div className="w-48 h-48 flex items-center justify-center">
+          <div className="flex flex-col items-center justify-center">
+            <div className="w-full max-w-md lg:max-w-lg xl:max-w-xl flex items-center justify-center">
               <Image
                 src="/animated-logo.gif"
                 alt="MyBuddyPH Animated Logo"
-                width={192}
-                height={192}
-                className="w-full h-full object-contain"
+                width={500}
+                height={500}
+                className="w-full h-auto object-contain"
               />
             </div>
           </div>

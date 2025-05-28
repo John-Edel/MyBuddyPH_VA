@@ -74,7 +74,7 @@ export default function AboutPage() {
                 helps you hire smart and work smarter.
               </p>
               <p className="font-semibold">
-                t's a game-changing opportunity for Filipinos seeking stable
+                It's a game-changing opportunity for Filipinos seeking stable
                 online jobs — and for clients worldwide looking to scale with
                 reliable remote support.
               </p>
